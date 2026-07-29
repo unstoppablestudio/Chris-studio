@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chris | Shopify Expert & Ecommerce Specialist</title>
+
+    <meta name="description" content="Professional Shopify Expert specializing in Shopify store design, redesign, development, SEO, ecommerce optimization and marketing.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #ffffff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #ffffff;
+            border-bottom: 1px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #111827;
+        }
+
+        .logo span {
+            color: #16a34a;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 15px;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .nav-links a:hover {
+            color: #16a34a;
+        }
+
+        /* HERO */
+        .hero {
+            background: #f7faf8;
+            padding: 100px 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #dcfce7;
+            color: #15803d;
+            padding: 8px 15px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.1;
+            color: #111827;
+            margin-bottom: 22px;
+        }
+
+        .hero h1 span {
+            color: #16a34a;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #4b5563;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 24px;
+            border-radius: 7px;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #16a34a;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #15803d;
+        }
+
+        .btn-secondary {
+            border: 1px solid #d1d5db;
+            background: white;
+        }
+
+        .hero-card {
+            background: #111827;
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+        }
+
+        .hero-card h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .hero-card ul {
+            list-style: none;
+        }
+
+        .hero-card li {
+            padding: 10px 0;
+            border-bottom: 1px solid #374151;
+        }
+
+        .hero-card li:last-child {
+            border-bottom: none;
+        }
+
+        /* GENERAL SECTIONS */
+        section {
+            padding: 85px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 36px;
+            color: #111827;
+            margin-bottom: 12px;
+        }
+
+        .section-title p {
+            color: #6b7280;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        /* ABOUT */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #4b5563;
+            margin-bottom: 18px;
+        }
+
+        .about-box {
+            background: #f7faf8;
+            padding: 35px;
+            border-radius: 15px;
+        }
+
+        .about-box h3 {
+            margin-bottom: 20px;
+        }
+
+        .about-box div {
+            padding: 12px 0;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        /* SERVICES */
+        .services {
+            background: #f9fafb;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        }
+
+        .service-number {
+            color: #16a34a;
+            font-size: 14px;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            margin-bottom: 12px;
+            font-size: 21px;
+        }
+
+        .service-card p {
+            color: #6b7280;
+            font-size: 15px;
+        }
+
+        /* PORTFOLIO */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+            border: 1px solid #e5e7eb;
+            border-radius: 15px;
+            overflow: hidden;
+            background: white;
+        }
+
+        .project-image {
+            height: 230px;
+            background: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+            font-weight: 700;
+        }
+
+        .project-content {
+            padding: 25px;
+        }
+
+        .project-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .project-content p {
+            color: #6b7280;
+            font-size: 15px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #ecfdf5;
+            color: #15803d;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin: 15px 5px 0 0;
+        }
+
+        /* SKILLS */
+        .skills {
+            background: #f9fafb;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .skill {
+            background: white;
+            border: 1px solid #e5e7eb;
+            padding: 12px 18px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+
+        /* PROCESS */
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .process-card {
+            text-align: center;
+            padding: 25px;
+        }
+
+        .process-number {
+            width: 45px;
+            height: 45px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #16a34a;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+        }
+
+        .process-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .process-card p {
+            color: #6b7280;
+            font-size: 14px;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #111827;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: #d1d5db;
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0b1120;
+            color: #9ca3af;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 70px 0;
+            }
+
+            .hero-content,
+            .about-grid,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="container nav-container">
+        <div class="logo">Chris<span>.</span></div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero">
+    <div class="container hero-content">
+
+        <div>
+            <div class="badge">SHOPIFY EXPERT & ECOMMERCE SPECIALIST</div>
+
+            <h1>
+                I Build Shopify Stores That
+                <span>Look Better & Sell Better.</span>
+            </h1>
+
+            <p>
+                I help businesses build, redesign, optimize and grow
+                professional Shopify stores with a focus on user experience,
+                conversion and ecommerce growth.
+            </p>
+
+            <div class="buttons">
+                <a href="#portfolio" class="btn btn-primary">
+                    View My Work
+                </a>
+
+                <a href="#contact" class="btn btn-secondary">
+                    Let's Work Together
+                </a>
+            </div>
+        </div>
+
+
+        <div class="hero-card">
+            <h3>What I Can Help With</h3>
+
+            <ul>
+                <li>✓ Shopify Store Design</li>
+                <li>✓ Shopify Website Redesign</li>
+                <li>✓ Shopify Development</li>
+                <li>✓ Ecommerce SEO</li>
+                <li>✓ Conversion Rate Optimization</li>
+                <li>✓ Shopify Marketing & Automation</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container about-grid">
+
+        <div class="about-text">
+            <h2>About Me</h2>
+
+            <p>
+                Every business is unique, so I take the time to understand
+                your goals and build a Shopify store that matches your brand,
+                improves the user experience, and helps you attract more
+                customers.
+            </p>
+
+            <p>
+                I work with businesses that need a professional Shopify
+                website, store redesign, ecommerce optimization, SEO,
+                integrations and marketing support.
+            </p>
+
+            <p>
+                My goal is simple: create a store that is visually
+                professional, easy to navigate, mobile-friendly and
+                designed with your customers in mind.
+            </p>
+        </div>
+
+
+        <div class="about-box">
+
+            <h3>My Focus</h3>
+
+            <div>Shopify Website Design & Development</div>
+            <div>Shopify Store Redesign</div>
+            <div>Ecommerce User Experience</div>
+            <div>Conversion Rate Optimization</div>
+            <div>Shopify SEO</div>
+            <div>Ecommerce Marketing</div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services" class="services">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>My Services</h2>
+            <p>
+                Shopify and ecommerce solutions designed around your
+                business goals.
+            </p>
+        </div>
+
+
+        <div class="service-grid">
+
+            <div class="service-card">
+                <div class="service-number">01</div>
+                <h3>Shopify Store Design</h3>
+                <p>
+                    Professional Shopify website design focused on branding,
+                    navigation, mobile responsiveness and customer experience.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-number">02</div>
+                <h3>Shopify Store Redesign</h3>
+                <p>
+                    Improve an existing Shopify store with a cleaner design,
+                    better structure and stronger user experience.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-number">03</div>
+                <h3>Shopify Development</h3>
+                <p>
+                    Shopify setup, customization, apps, integrations,
+                    payment solutions and ecommerce functionality.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-number">04</div>
+                <h3>Shopify SEO</h3>
+                <p>
+                    Improve your store's search visibility through ecommerce
+                    SEO, on-page optimization and technical improvements.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-number">05</div>
+                <h3>Conversion Optimization</h3>
+                <p>
+                    Identify friction points and improve important areas such
+                    as product pages, navigation, calls-to-action and checkout.
+                </p>
+            </div>
+
+
+            <div class="service-card">
+                <div class="service-number">06</div>
+                <h3>Ecommerce Marketing</h3>
+                <p>
+                    Support for ecommerce marketing, email automation,
+                    customer engagement and store growth strategies.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Selected Projects</h2>
+
+            <p>
+                A selection of Shopify and ecommerce projects demonstrating
+                design, optimization and development work.
+            </p>
+
+        </div>
+
+
+        <div class="portfolio-grid">
+
+
+            <div class="project">
+
+                <div class="project-image">
+                    PROJECT SCREENSHOT
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Shopify Store Design & Redesign</h3>
+
+                    <p>
+                        Redesigned the storefront to create a cleaner layout,
+                        stronger product presentation and a better shopping
+                        experience.
+                    </p>
+
+                    <span class="tag">Shopify</span>
+                    <span class="tag">Web Design</span>
+                    <span class="tag">UX</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project">
+
+                <div class="project-image">
+                    PROJECT SCREENSHOT
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Ecommerce Store Optimization</h3>
+
+                    <p>
+                        Improved the structure and presentation of an ecommerce
+                        store with attention to navigation, product pages and
+                        customer experience.
+                    </p>
+
+                    <span class="tag">Shopify</span>
+                    <span class="tag">CRO</span>
+                    <span class="tag">Ecommerce</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project">
+
+                <div class="project-image">
+                    PROJECT SCREENSHOT
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Shopify SEO & Optimization</h3>
+
+                    <p>
+                        Worked on ecommerce SEO and website improvements aimed
+                        at making the store easier for customers and search
+                        engines to navigate.
+                    </p>
+
+                    <span class="tag">Shopify SEO</span>
+                    <span class="tag">SEO</span>
+                    <span class="tag">Optimization</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="project">
+
+                <div class="project-image">
+                    PROJECT SCREENSHOT
+                </div>
+
+                <div class="project-content">
+
+                    <h3>Shopify Ecommerce Setup</h3>
+
+                    <p>
+                        Built and configured ecommerce functionality including
+                        store structure, products, apps and essential
+                        integrations.
+                    </p>
+
+                    <span class="tag">Shopify</span>
+                    <span class="tag">Development</span>
+                    <span class="tag">Integration</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>Skills & Expertise</h2>
+
+            <p>
+                Areas I can help with across Shopify and ecommerce.
+            </p>
+
+        </div>
+
+
+        <div class="skill-list">
+
+            <div class="skill">Shopify</div>
+            <div class="skill">Shopify Website Design</div>
+            <div class="skill">Shopify Website Redesign</div>
+            <div class="skill">Shopify Development</div>
+            <div class="skill">Shopify SEO</div>
+            <div class="skill">Ecommerce SEO</div>
+            <div class="skill">Ecommerce Website Development</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">Shopify Apps</div>
+            <div class="skill">API Integration</div>
+            <div class="skill">Payment Gateway Integration</div>
+            <div class="skill">Conversion Rate Optimization</div>
+            <div class="skill">Shopify Marketing</div>
+            <div class="skill">Shopify Dropshipping</div>
+            <div class="skill">Email Marketing</div>
+            <div class="skill">Marketing Automation</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+<section>
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>My Working Process</h2>
+
+            <p>
+                A simple process designed to keep projects clear and focused.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-card">
+                <div class="process-number">1</div>
+                <h3>Understand</h3>
+                <p>
+                    I learn about your business, customers, goals and current
+                    challenges.
+                </p>
+            </div>
+
+
+            <div class="process-card">
+                <div class="process-number">2</div>
+                <h3>Plan</h3>
+                <p>
+                    I identify the improvements and create a clear approach
+                    for the project.
+                </p>
+            </div>
+
+
+            <div class="process-card">
+                <div class="process-number">3</div>
+                <h3>Build</h3>
+                <p>
+                    I implement the design, functionality and optimization
+                    required.
+                </p>
+            </div>
+
+
+            <div class="process-card">
+                <div class="process-number">4</div>
+                <h3>Improve</h3>
+                <p>
+                    I review the final result and make sure the store is ready
+                    for customers.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <h2>Have a Shopify Project?</h2>
+
+        <p>
+            Whether you need a new Shopify store, a redesign, optimization
+            or ecommerce support, let's discuss your project.
+        </p>
+
+        <div class="buttons" style="justify-content:center;">
+
+            <!-- Replace this with your actual Upwork profile link -->
+            <a href="#" class="btn btn-primary">
+                View My Upwork Profile
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <p>
+        © 2026 Chris. Shopify Expert & Ecommerce Specialist.
+    </p>
+
+</footer>
+
+</body>
+</html>
