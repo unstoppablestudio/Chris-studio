@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Chris | Shopify Expert | Store Design, SEO & Klaviyo</title>
 
-<meta name="description" content="Shopify Expert specializing in Shopify website design, theme customization, store optimization, SEO and Klaviyo email marketing automation.">
+<meta name="description" content="Shopify Expert specializing in Shopify website design, theme customization, store redesign, SEO and Klaviyo email marketing automation.">
 
 <style>
+
+/* =========================
+   RESET
+========================= */
 
 *{
     margin:0;
@@ -27,14 +32,13 @@ body{
     line-height:1.6;
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
+img{
+    display:block;
+    max-width:100%;
 }
 
-img{
-    width:100%;
-    display:block;
+a{
+    text-decoration:none;
 }
 
 .container{
@@ -43,28 +47,31 @@ img{
     margin:auto;
 }
 
-/* ================= NAVIGATION ================= */
+
+/* =========================
+   NAVIGATION
+========================= */
 
 nav{
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(255,255,255,.96);
-    border-bottom:1px solid #e8eee9;
+    background:rgba(255,255,255,0.97);
+    border-bottom:1px solid #e6ebe7;
     backdrop-filter:blur(10px);
 }
 
 .navbar{
     height:76px;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
 }
 
 .logo{
-    font-size:25px;
+    font-size:26px;
     font-weight:800;
-    color:#142018;
+    color:#17201a;
 }
 
 .logo span{
@@ -78,16 +85,19 @@ nav{
 }
 
 .nav-links a{
+    color:#4c574f;
     font-size:14px;
     font-weight:700;
-    color:#47534b;
 }
 
 .nav-links a:hover{
     color:#16834a;
 }
 
-/* ================= BUTTONS ================= */
+
+/* =========================
+   BUTTONS
+========================= */
 
 .btn{
     display:inline-block;
@@ -95,12 +105,12 @@ nav{
     border-radius:7px;
     font-size:14px;
     font-weight:700;
-    transition:.2s ease;
+    transition:0.2s ease;
 }
 
 .btn-primary{
     background:#16834a;
-    color:#fff;
+    color:white;
 }
 
 .btn-primary:hover{
@@ -109,9 +119,9 @@ nav{
 }
 
 .btn-outline{
-    border:1px solid #cfd9d1;
-    background:#fff;
+    background:white;
     color:#26332a;
+    border:1px solid #ccd6cf;
 }
 
 .btn-outline:hover{
@@ -119,7 +129,10 @@ nav{
     color:#16834a;
 }
 
-/* ================= HERO ================= */
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
     background:#f5faf6;
@@ -128,20 +141,20 @@ nav{
 
 .hero-grid{
     display:grid;
-    grid-template-columns:1.15fr .85fr;
+    grid-template-columns:1.15fr 0.85fr;
     gap:70px;
     align-items:center;
 }
 
 .eyebrow{
     display:inline-block;
-    padding:7px 13px;
-    border-radius:30px;
     background:#e0f3e7;
     color:#12683b;
+    padding:7px 13px;
+    border-radius:30px;
     font-size:12px;
     font-weight:800;
-    letter-spacing:.5px;
+    letter-spacing:0.5px;
     margin-bottom:20px;
 }
 
@@ -149,7 +162,6 @@ nav{
     font-size:56px;
     line-height:1.08;
     letter-spacing:-2px;
-    color:#152019;
     margin-bottom:22px;
 }
 
@@ -158,30 +170,30 @@ nav{
 }
 
 .hero-text{
-    font-size:18px;
+    max-width:680px;
     color:#59645d;
-    max-width:650px;
+    font-size:18px;
     margin-bottom:30px;
 }
 
 .hero-buttons{
     display:flex;
-    gap:13px;
     flex-wrap:wrap;
+    gap:13px;
 }
 
 .hero-card{
     background:#17231b;
-    color:#fff;
+    color:white;
     padding:38px;
     border-radius:20px;
-    box-shadow:0 25px 60px rgba(0,0,0,.12);
+    box-shadow:0 25px 60px rgba(0,0,0,0.12);
 }
 
 .hero-card small{
     color:#aab8ae;
-    font-weight:700;
     text-transform:uppercase;
+    font-weight:700;
     letter-spacing:1px;
 }
 
@@ -200,23 +212,22 @@ nav{
     color:#e7eee9;
 }
 
-.hero-list li:last-child{
-    border-bottom:0;
-}
 
-/* ================= GENERAL ================= */
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 section{
     padding:90px 0;
 }
 
 .section-heading{
+    max-width:720px;
     text-align:center;
-    max-width:700px;
     margin:0 auto 50px;
 }
 
-.section-heading .label{
+.label{
     color:#16834a;
     font-size:13px;
     font-weight:800;
@@ -227,7 +238,6 @@ section{
 .section-heading h2{
     font-size:38px;
     line-height:1.2;
-    color:#17201a;
     margin:10px 0 15px;
 }
 
@@ -235,7 +245,10 @@ section{
     color:#69736c;
 }
 
-/* ================= ABOUT ================= */
+
+/* =========================
+   ABOUT
+========================= */
 
 .about-grid{
     display:grid;
@@ -246,7 +259,8 @@ section{
 
 .about h2{
     font-size:38px;
-    margin-bottom:20px;
+    line-height:1.2;
+    margin:10px 0 20px;
 }
 
 .about p{
@@ -262,8 +276,8 @@ section{
 }
 
 .about-box h3{
-    margin-bottom:20px;
     font-size:23px;
+    margin-bottom:20px;
 }
 
 .about-point{
@@ -273,10 +287,13 @@ section{
 }
 
 .about-point:last-child{
-    border-bottom:0;
+    border-bottom:none;
 }
 
-/* ================= SERVICES ================= */
+
+/* =========================
+   SERVICES
+========================= */
 
 .services{
     background:#f7f9f8;
@@ -289,16 +306,16 @@ section{
 }
 
 .service{
-    background:#fff;
+    background:white;
     padding:30px;
     border:1px solid #e4e9e5;
     border-radius:14px;
-    transition:.25s;
+    transition:0.25s;
 }
 
 .service:hover{
     transform:translateY(-5px);
-    box-shadow:0 18px 35px rgba(0,0,0,.07);
+    box-shadow:0 18px 35px rgba(0,0,0,0.07);
 }
 
 .service-number{
@@ -318,7 +335,10 @@ section{
     font-size:15px;
 }
 
-/* ================= PORTFOLIO ================= */
+
+/* =========================
+   PORTFOLIO
+========================= */
 
 .portfolio-grid{
     display:grid;
@@ -330,27 +350,67 @@ section{
     border:1px solid #e1e7e2;
     border-radius:17px;
     overflow:hidden;
-    background:#fff;
-    transition:.25s;
+    background:white;
+    transition:0.25s;
 }
 
 .project:hover{
-    box-shadow:0 18px 40px rgba(0,0,0,.08);
+    box-shadow:0 18px 40px rgba(0,0,0,0.08);
     transform:translateY(-4px);
 }
 
-.project-image{
-    height:310px;
-    background:#eef2ef;
-    overflow:hidden;
+
+/* =========================
+   PROJECT GALLERY
+========================= */
+
+.project-gallery{
+    background:#f1f4f2;
+    padding:14px;
 }
 
-.project-image img{
-    height:100%;
+.project-main-image{
     width:100%;
-    object-fit:cover;
-    object-position:top;
+    height:500px;
+    object-fit:contain;
+    object-position:top center;
+    background:white;
+    border-radius:10px;
+    cursor:zoom-in;
 }
+
+.project-thumbnails{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin-top:12px;
+}
+
+.project-thumbnails img{
+    width:100%;
+    height:115px;
+    object-fit:cover;
+    object-position:top center;
+    background:white;
+    border-radius:8px;
+    border:2px solid transparent;
+    cursor:pointer;
+    transition:0.2s ease;
+}
+
+.project-thumbnails img:hover{
+    transform:scale(1.02);
+    border-color:#16834a;
+}
+
+.project-thumbnails img.active{
+    border-color:#16834a;
+}
+
+
+/* =========================
+   PROJECT CONTENT
+========================= */
 
 .project-content{
     padding:28px;
@@ -361,7 +421,7 @@ section{
     font-size:12px;
     font-weight:800;
     text-transform:uppercase;
-    letter-spacing:.6px;
+    letter-spacing:0.6px;
 }
 
 .project h3{
@@ -408,7 +468,10 @@ section{
     font-weight:700;
 }
 
-/* ================= SEO / KLAVIYO FEATURE ================= */
+
+/* =========================
+   ADDITIONAL EXPERTISE
+========================= */
 
 .feature-section{
     background:#f7f9f8;
@@ -421,7 +484,7 @@ section{
 }
 
 .feature-card{
-    background:#fff;
+    background:white;
     border:1px solid #e3e9e4;
     border-radius:15px;
     padding:32px;
@@ -455,7 +518,10 @@ section{
     margin-right:8px;
 }
 
-/* ================= SKILLS ================= */
+
+/* =========================
+   SKILLS
+========================= */
 
 .skills{
     text-align:center;
@@ -474,13 +540,16 @@ section{
     padding:11px 16px;
     border:1px solid #dfe6e1;
     border-radius:30px;
-    background:#fff;
+    background:white;
     color:#3d4941;
     font-size:14px;
     font-weight:600;
 }
 
-/* ================= PROCESS ================= */
+
+/* =========================
+   PROCESS
+========================= */
 
 .process{
     background:#f7f9f8;
@@ -506,7 +575,7 @@ section{
     margin:0 auto 18px;
     border-radius:50%;
     background:#16834a;
-    color:#fff;
+    color:white;
     font-weight:800;
 }
 
@@ -519,11 +588,14 @@ section{
     font-size:14px;
 }
 
-/* ================= CTA ================= */
+
+/* =========================
+   CTA
+========================= */
 
 .cta{
     background:#17231b;
-    color:#fff;
+    color:white;
     text-align:center;
 }
 
@@ -547,7 +619,10 @@ section{
     background:#36c978;
 }
 
-/* ================= FOOTER ================= */
+
+/* =========================
+   FOOTER
+========================= */
 
 footer{
     background:#0e1511;
@@ -568,17 +643,12 @@ footer{
     font-weight:700;
 }
 
-/* ================= MOBILE ================= */
 
-@media(max-width:850px){
+/* =========================
+   MOBILE
+========================= */
 
-    .nav-links{
-        display:none;
-    }
-
-    .hero{
-        padding:75px 0;
-    }
+@media(max-width:900px){
 
     .hero-grid,
     .about-grid,
@@ -587,7 +657,7 @@ footer{
     }
 
     .hero h1{
-        font-size:42px;
+        font-size:46px;
     }
 
     .service-grid{
@@ -601,16 +671,30 @@ footer{
     .process-grid{
         grid-template-columns:1fr 1fr;
     }
+
+    .project-main-image{
+        height:550px;
+    }
+
 }
 
-@media(max-width:560px){
+
+@media(max-width:600px){
 
     section{
         padding:65px 0;
     }
 
+    .nav-links{
+        display:none;
+    }
+
+    .hero{
+        padding:75px 0;
+    }
+
     .hero h1{
-        font-size:36px;
+        font-size:37px;
         letter-spacing:-1px;
     }
 
@@ -632,8 +716,17 @@ footer{
         grid-template-columns:1fr;
     }
 
-    .project-image{
-        height:250px;
+    .project-main-image{
+        height:auto;
+        min-height:250px;
+    }
+
+    .project-thumbnails{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .project-thumbnails img{
+        height:100px;
     }
 
     .cta h2{
@@ -644,16 +737,23 @@ footer{
         flex-direction:column;
         gap:10px;
     }
+
 }
 
 </style>
+
 </head>
+
 
 <body>
 
-<!-- NAVIGATION -->
+
+<!-- =========================
+     NAVIGATION
+========================= -->
 
 <nav>
+
 <div class="container navbar">
 
     <div class="logo">
@@ -661,18 +761,38 @@ footer{
     </div>
 
     <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+        <li>
+            <a href="#about">About</a>
+        </li>
+
+        <li>
+            <a href="#services">Services</a>
+        </li>
+
+        <li>
+            <a href="#portfolio">Portfolio</a>
+        </li>
+
+        <li>
+            <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+            <a href="#contact">Contact</a>
+        </li>
+
     </ul>
 
 </div>
+
 </nav>
 
 
-<!-- HERO -->
+
+<!-- =========================
+     HERO
+========================= -->
 
 <section class="hero">
 
@@ -693,7 +813,7 @@ footer{
             I specialize in Shopify website design, theme customization,
             store optimization, SEO and Klaviyo email marketing automation
             to help ecommerce businesses create better customer experiences
-            and build stronger online stores.
+            and stronger online stores.
         </p>
 
         <div class="hero-buttons">
@@ -705,7 +825,9 @@ footer{
                 Hire Me on Upwork
             </a>
 
-            <a href="#portfolio" class="btn btn-outline">
+            <a
+                href="#portfolio"
+                class="btn btn-outline">
                 View My Work
             </a>
 
@@ -723,10 +845,15 @@ footer{
         <ul class="hero-list">
 
             <li>✓ Shopify Website Design</li>
+
             <li>✓ Shopify Theme Customization</li>
+
             <li>✓ Shopify Store Redesign</li>
+
             <li>✓ Shopify SEO & Search Visibility</li>
+
             <li>✓ Conversion Rate Optimization</li>
+
             <li>✓ Klaviyo Email Marketing Automation</li>
 
         </ul>
@@ -738,7 +865,10 @@ footer{
 </section>
 
 
-<!-- ABOUT -->
+
+<!-- =========================
+     ABOUT
+========================= -->
 
 <section id="about" class="about">
 
@@ -746,10 +876,13 @@ footer{
 
     <div>
 
-        <div class="section-heading" style="text-align:left;margin:0 0 25px;">
-            <div class="label">About Me</div>
-            <h2>Helping Shopify stores become more professional and effective.</h2>
+        <div class="label">
+            About Me
         </div>
+
+        <h2>
+            Helping Shopify stores become more professional and effective.
+        </h2>
 
         <p>
             Every business is unique, so I take the time to understand your
@@ -803,7 +936,10 @@ footer{
 </section>
 
 
-<!-- SERVICES -->
+
+<!-- =========================
+     SERVICES
+========================= -->
 
 <section id="services" class="services">
 
@@ -811,9 +947,13 @@ footer{
 
     <div class="section-heading">
 
-        <div class="label">Services</div>
+        <div class="label">
+            Services
+        </div>
 
-        <h2>How I Can Help Your Shopify Store</h2>
+        <h2>
+            How I Can Help Your Shopify Store
+        </h2>
 
         <p>
             Practical ecommerce services focused on creating a better
@@ -825,65 +965,114 @@ footer{
 
     <div class="service-grid">
 
+
         <div class="service">
-            <div class="service-number">01</div>
-            <h3>Shopify Website Design</h3>
+
+            <div class="service-number">
+                01
+            </div>
+
+            <h3>
+                Shopify Website Design
+            </h3>
+
             <p>
                 Professional Shopify storefront design focused on branding,
                 structure, navigation and customer experience.
             </p>
+
         </div>
 
 
         <div class="service">
-            <div class="service-number">02</div>
-            <h3>Theme Customization</h3>
+
+            <div class="service-number">
+                02
+            </div>
+
+            <h3>
+                Shopify Theme Customization
+            </h3>
+
             <p>
                 Customize your existing Shopify free theme to create a more
                 unique and professional storefront without necessarily
                 replacing the theme.
             </p>
+
         </div>
 
 
         <div class="service">
-            <div class="service-number">03</div>
-            <h3>Shopify Store Redesign</h3>
+
+            <div class="service-number">
+                03
+            </div>
+
+            <h3>
+                Shopify Store Redesign
+            </h3>
+
             <p>
                 Improve an existing Shopify website with better layouts,
                 product presentation, visual hierarchy and user experience.
             </p>
+
         </div>
 
 
         <div class="service">
-            <div class="service-number">04</div>
-            <h3>Shopify SEO</h3>
+
+            <div class="service-number">
+                04
+            </div>
+
+            <h3>
+                Shopify SEO
+            </h3>
+
             <p>
                 Set up and improve the store's SEO foundation, search engine
                 visibility, indexing and sitemap submission.
             </p>
+
         </div>
 
 
         <div class="service">
-            <div class="service-number">05</div>
-            <h3>Ecommerce Optimization</h3>
+
+            <div class="service-number">
+                05
+            </div>
+
+            <h3>
+                Ecommerce Optimization
+            </h3>
+
             <p>
                 Improve important storefront elements that influence
                 navigation, product discovery and the overall shopping
                 experience.
             </p>
+
         </div>
 
 
         <div class="service">
-            <div class="service-number">06</div>
-            <h3>Klaviyo Email Marketing</h3>
+
+            <div class="service-number">
+                06
+            </div>
+
+            <h3>
+                Klaviyo Email Marketing
+            </h3>
+
             <p>
                 Set up email marketing automation and customer flows designed
                 to engage subscribers and support customer retention.
             </p>
+
         </div>
 
     </div>
@@ -893,7 +1082,10 @@ footer{
 </section>
 
 
-<!-- PORTFOLIO -->
+
+<!-- =========================
+     PORTFOLIO
+========================= -->
 
 <section id="portfolio">
 
@@ -901,9 +1093,13 @@ footer{
 
     <div class="section-heading">
 
-        <div class="label">Selected Work</div>
+        <div class="label">
+            Selected Work
+        </div>
 
-        <h2>Real Shopify Projects</h2>
+        <h2>
+            Real Shopify Projects
+        </h2>
 
         <p>
             A selection of Shopify design, optimization, SEO and email
@@ -916,17 +1112,38 @@ footer{
     <div class="portfolio-grid">
 
 
-        <!-- PROJECT 1 -->
+        <!-- =========================
+             PROJECT 1
+        ========================== -->
 
         <article class="project">
 
-            <div class="project-image">
+
+            <div class="project-gallery">
 
                 <img
+                    id="perfect-main"
+                    class="project-main-image"
                     src="images/perfect-love-coffee-1.png"
-                    alt="Perfect Love Coffee Shopify store customization">
+                    alt="Perfect Love Coffee Shopify store">
+
+                <div class="project-thumbnails">
+
+                    <img
+                        class="active"
+                        src="images/perfect-love-coffee-1.png"
+                        alt="Perfect Love Coffee screenshot 1"
+                        onclick="changeImage('perfect-main', this)">
+
+                    <img
+                        src="images/perfect-love-coffee-2.png"
+                        alt="Perfect Love Coffee screenshot 2"
+                        onclick="changeImage('perfect-main', this)">
+
+                </div>
 
             </div>
+
 
             <div class="project-content">
 
@@ -934,7 +1151,9 @@ footer{
                     Shopify Theme Customization
                 </div>
 
-                <h3>Perfect Love Coffee</h3>
+                <h3>
+                    Perfect Love Coffee
+                </h3>
 
                 <p class="project-description">
                     Customized the client's existing Shopify free theme to
@@ -944,19 +1163,46 @@ footer{
 
                 <ul class="project-work">
 
-                    <li>Customized homepage structure</li>
-                    <li>Improved product collection presentation</li>
-                    <li>Enhanced product sections and pricing display</li>
-                    <li>Customized newsletter and footer sections</li>
-                    <li>Improved overall visual consistency</li>
+                    <li>
+                        Customized homepage structure
+                    </li>
+
+                    <li>
+                        Improved product collection presentation
+                    </li>
+
+                    <li>
+                        Enhanced product sections and pricing display
+                    </li>
+
+                    <li>
+                        Customized newsletter and footer sections
+                    </li>
+
+                    <li>
+                        Improved overall visual consistency
+                    </li>
 
                 </ul>
 
                 <div class="tags">
-                    <span class="tag">Shopify</span>
-                    <span class="tag">Theme Customization</span>
-                    <span class="tag">Web Design</span>
-                    <span class="tag">UX</span>
+
+                    <span class="tag">
+                        Shopify
+                    </span>
+
+                    <span class="tag">
+                        Theme Customization
+                    </span>
+
+                    <span class="tag">
+                        Web Design
+                    </span>
+
+                    <span class="tag">
+                        UX
+                    </span>
+
                 </div>
 
             </div>
@@ -964,17 +1210,39 @@ footer{
         </article>
 
 
-        <!-- PROJECT 2 -->
+
+        <!-- =========================
+             PROJECT 2
+        ========================== -->
 
         <article class="project">
 
-            <div class="project-image">
+
+            <div class="project-gallery">
 
                 <img
+                    id="biz-main"
+                    class="project-main-image"
                     src="images/biz-vaults-1.png"
-                    alt="Biz Vaults Shopify store customization">
+                    alt="Biz Vaults Shopify store">
+
+                <div class="project-thumbnails">
+
+                    <img
+                        class="active"
+                        src="images/biz-vaults-1.png"
+                        alt="Biz Vaults screenshot 1"
+                        onclick="changeImage('biz-main', this)">
+
+                    <img
+                        src="images/biz-vaults-2.png"
+                        alt="Biz Vaults screenshot 2"
+                        onclick="changeImage('biz-main', this)">
+
+                </div>
 
             </div>
+
 
             <div class="project-content">
 
@@ -982,7 +1250,9 @@ footer{
                     Shopify Store Design
                 </div>
 
-                <h3>Biz Vaults</h3>
+                <h3>
+                    Biz Vaults
+                </h3>
 
                 <p class="project-description">
                     Customized the client's existing Shopify free theme to
@@ -992,19 +1262,46 @@ footer{
 
                 <ul class="project-work">
 
-                    <li>Customized existing Shopify theme</li>
-                    <li>Created custom image and text sections</li>
-                    <li>Improved promotional content presentation</li>
-                    <li>Added clear calls-to-action</li>
-                    <li>Improved typography, spacing and visual hierarchy</li>
+                    <li>
+                        Customized existing Shopify theme
+                    </li>
+
+                    <li>
+                        Created custom image and text sections
+                    </li>
+
+                    <li>
+                        Improved promotional content presentation
+                    </li>
+
+                    <li>
+                        Added clear calls-to-action
+                    </li>
+
+                    <li>
+                        Improved typography, spacing and visual hierarchy
+                    </li>
 
                 </ul>
 
                 <div class="tags">
-                    <span class="tag">Shopify</span>
-                    <span class="tag">Theme Customization</span>
-                    <span class="tag">Ecommerce Design</span>
-                    <span class="tag">UX/UI</span>
+
+                    <span class="tag">
+                        Shopify
+                    </span>
+
+                    <span class="tag">
+                        Theme Customization
+                    </span>
+
+                    <span class="tag">
+                        Ecommerce Design
+                    </span>
+
+                    <span class="tag">
+                        UX/UI
+                    </span>
+
                 </div>
 
             </div>
@@ -1012,17 +1309,44 @@ footer{
         </article>
 
 
-        <!-- PROJECT 3 -->
+
+        <!-- =========================
+             PROJECT 3
+        ========================== -->
 
         <article class="project">
 
-            <div class="project-image">
+
+            <div class="project-gallery">
 
                 <img
-                    src="images/shopify-seo-1.PNG"
-                    alt="Shopify SEO setup and Google Search Console">
+                    id="seo-main"
+                    class="project-main-image"
+                    src="images/shopify-seo-1.png"
+                    alt="Shopify SEO setup">
+
+                <div class="project-thumbnails">
+
+                    <img
+                        class="active"
+                        src="images/shopify-seo-1.png"
+                        alt="Shopify SEO screenshot 1"
+                        onclick="changeImage('seo-main', this)">
+
+                    <img
+                        src="images/shopify-seo-2.png"
+                        alt="Shopify SEO screenshot 2"
+                        onclick="changeImage('seo-main', this)">
+
+                    <img
+                        src="images/shopify-seo-3.png"
+                        alt="Shopify SEO screenshot 3"
+                        onclick="changeImage('seo-main', this)">
+
+                </div>
 
             </div>
+
 
             <div class="project-content">
 
@@ -1030,7 +1354,9 @@ footer{
                     Shopify SEO
                 </div>
 
-                <h3>Shopify SEO & Search Visibility Setup</h3>
+                <h3>
+                    Shopify SEO & Search Visibility Setup
+                </h3>
 
                 <p class="project-description">
                     Set up the store's SEO foundation and search engine
@@ -1040,19 +1366,46 @@ footer{
 
                 <ul class="project-work">
 
-                    <li>Google Analytics setup</li>
-                    <li>Google Search Console setup</li>
-                    <li>Search engine indexing verification</li>
-                    <li>Shopify sitemap submission</li>
-                    <li>Bing Webmaster Tools setup</li>
+                    <li>
+                        Google Analytics setup
+                    </li>
+
+                    <li>
+                        Google Search Console setup
+                    </li>
+
+                    <li>
+                        Search engine indexing verification
+                    </li>
+
+                    <li>
+                        Shopify sitemap submission
+                    </li>
+
+                    <li>
+                        Bing Webmaster Tools setup
+                    </li>
 
                 </ul>
 
                 <div class="tags">
-                    <span class="tag">Shopify SEO</span>
-                    <span class="tag">Google Search Console</span>
-                    <span class="tag">Google Analytics</span>
-                    <span class="tag">Bing Webmaster</span>
+
+                    <span class="tag">
+                        Shopify SEO
+                    </span>
+
+                    <span class="tag">
+                        Google Search Console
+                    </span>
+
+                    <span class="tag">
+                        Google Analytics
+                    </span>
+
+                    <span class="tag">
+                        Bing Webmaster
+                    </span>
+
                 </div>
 
             </div>
@@ -1060,17 +1413,44 @@ footer{
         </article>
 
 
-        <!-- PROJECT 4 -->
+
+        <!-- =========================
+             PROJECT 4
+        ========================== -->
 
         <article class="project">
 
-            <div class="project-image">
+
+            <div class="project-gallery">
 
                 <img
-                    src="images/klaviyo-1.PNG"
-                    alt="Klaviyo email marketing automation setup">
+                    id="klaviyo-main"
+                    class="project-main-image"
+                    src="images/klaviyo-1.png"
+                    alt="Klaviyo email marketing automation">
+
+                <div class="project-thumbnails">
+
+                    <img
+                        class="active"
+                        src="images/klaviyo-1.png"
+                        alt="Klaviyo screenshot 1"
+                        onclick="changeImage('klaviyo-main', this)">
+
+                    <img
+                        src="images/klaviyo-2.png"
+                        alt="Klaviyo screenshot 2"
+                        onclick="changeImage('klaviyo-main', this)">
+
+                    <img
+                        src="images/klaviyo-3.png"
+                        alt="Klaviyo screenshot 3"
+                        onclick="changeImage('klaviyo-main', this)">
+
+                </div>
 
             </div>
+
 
             <div class="project-content">
 
@@ -1078,7 +1458,9 @@ footer{
                     Email Marketing Automation
                 </div>
 
-                <h3>Klaviyo Email Marketing Setup</h3>
+                <h3>
+                    Klaviyo Email Marketing Setup
+                </h3>
 
                 <p class="project-description">
                     Set up and configured an email marketing process in
@@ -1088,19 +1470,46 @@ footer{
 
                 <ul class="project-work">
 
-                    <li>Klaviyo and Shopify email marketing setup</li>
-                    <li>Welcome series automation</li>
-                    <li>Branded email templates</li>
-                    <li>Customer engagement messaging</li>
-                    <li>Automated email flow configuration</li>
+                    <li>
+                        Klaviyo and Shopify email marketing setup
+                    </li>
+
+                    <li>
+                        Welcome series automation
+                    </li>
+
+                    <li>
+                        Branded email templates
+                    </li>
+
+                    <li>
+                        Customer engagement messaging
+                    </li>
+
+                    <li>
+                        Automated email flow configuration
+                    </li>
 
                 </ul>
 
                 <div class="tags">
-                    <span class="tag">Klaviyo</span>
-                    <span class="tag">Shopify</span>
-                    <span class="tag">Email Marketing</span>
-                    <span class="tag">Automation</span>
+
+                    <span class="tag">
+                        Klaviyo
+                    </span>
+
+                    <span class="tag">
+                        Shopify
+                    </span>
+
+                    <span class="tag">
+                        Email Marketing
+                    </span>
+
+                    <span class="tag">
+                        Automation
+                    </span>
+
                 </div>
 
             </div>
@@ -1115,7 +1524,10 @@ footer{
 </section>
 
 
-<!-- ADDITIONAL EXPERTISE -->
+
+<!-- =========================
+     ADDITIONAL EXPERTISE
+========================= -->
 
 <section class="feature-section">
 
@@ -1123,9 +1535,13 @@ footer{
 
     <div class="section-heading">
 
-        <div class="label">Additional Expertise</div>
+        <div class="label">
+            Additional Expertise
+        </div>
 
-        <h2>Beyond Store Design</h2>
+        <h2>
+            Beyond Store Design
+        </h2>
 
         <p>
             I can also help improve the systems that support your Shopify
@@ -1144,7 +1560,9 @@ footer{
                 SEARCH ENGINE OPTIMIZATION
             </div>
 
-            <h3>Shopify SEO Setup</h3>
+            <h3>
+                Shopify SEO Setup
+            </h3>
 
             <p>
                 Help establish a stronger SEO foundation and make your Shopify
@@ -1153,11 +1571,25 @@ footer{
 
             <ul class="feature-list">
 
-                <li>Google Search Console</li>
-                <li>Google Analytics</li>
-                <li>Bing Webmaster Tools</li>
-                <li>Sitemap submission</li>
-                <li>Indexing setup and checks</li>
+                <li>
+                    Google Search Console
+                </li>
+
+                <li>
+                    Google Analytics
+                </li>
+
+                <li>
+                    Bing Webmaster Tools
+                </li>
+
+                <li>
+                    Sitemap submission
+                </li>
+
+                <li>
+                    Indexing setup and checks
+                </li>
 
             </ul>
 
@@ -1170,7 +1602,9 @@ footer{
                 EMAIL MARKETING
             </div>
 
-            <h3>Klaviyo Automation</h3>
+            <h3>
+                Klaviyo Automation
+            </h3>
 
             <p>
                 Build automated customer communication that keeps your store
@@ -1179,11 +1613,25 @@ footer{
 
             <ul class="feature-list">
 
-                <li>Welcome email flows</li>
-                <li>Automated customer emails</li>
-                <li>Branded email templates</li>
-                <li>Customer engagement</li>
-                <li>Email marketing automation</li>
+                <li>
+                    Welcome email flows
+                </li>
+
+                <li>
+                    Automated customer emails
+                </li>
+
+                <li>
+                    Branded email templates
+                </li>
+
+                <li>
+                    Customer engagement
+                </li>
+
+                <li>
+                    Email marketing automation
+                </li>
 
             </ul>
 
@@ -1196,7 +1644,10 @@ footer{
 </section>
 
 
-<!-- SKILLS -->
+
+<!-- =========================
+     SKILLS
+========================= -->
 
 <section id="skills" class="skills">
 
@@ -1204,9 +1655,13 @@ footer{
 
     <div class="section-heading">
 
-        <div class="label">Skills & Tools</div>
+        <div class="label">
+            Skills & Tools
+        </div>
 
-        <h2>My Shopify & Ecommerce Toolkit</h2>
+        <h2>
+            My Shopify & Ecommerce Toolkit
+        </h2>
 
         <p>
             Skills and platforms I use to design, optimize and support
@@ -1218,22 +1673,69 @@ footer{
 
     <div class="skill-list">
 
-        <span class="skill">Shopify</span>
-        <span class="skill">Shopify Website Design</span>
-        <span class="skill">Shopify Theme Customization</span>
-        <span class="skill">Shopify Store Redesign</span>
-        <span class="skill">Shopify Development</span>
-        <span class="skill">Ecommerce Website Design</span>
-        <span class="skill">Responsive Design</span>
-        <span class="skill">Shopify SEO</span>
-        <span class="skill">Ecommerce SEO</span>
-        <span class="skill">Conversion Rate Optimization</span>
-        <span class="skill">Klaviyo</span>
-        <span class="skill">Email Marketing</span>
-        <span class="skill">Marketing Automation</span>
-        <span class="skill">Google Search Console</span>
-        <span class="skill">Google Analytics</span>
-        <span class="skill">Bing Webmaster Tools</span>
+        <span class="skill">
+            Shopify
+        </span>
+
+        <span class="skill">
+            Shopify Website Design
+        </span>
+
+        <span class="skill">
+            Shopify Theme Customization
+        </span>
+
+        <span class="skill">
+            Shopify Store Redesign
+        </span>
+
+        <span class="skill">
+            Shopify Development
+        </span>
+
+        <span class="skill">
+            Ecommerce Website Design
+        </span>
+
+        <span class="skill">
+            Responsive Design
+        </span>
+
+        <span class="skill">
+            Shopify SEO
+        </span>
+
+        <span class="skill">
+            Ecommerce SEO
+        </span>
+
+        <span class="skill">
+            Conversion Rate Optimization
+        </span>
+
+        <span class="skill">
+            Klaviyo
+        </span>
+
+        <span class="skill">
+            Email Marketing
+        </span>
+
+        <span class="skill">
+            Marketing Automation
+        </span>
+
+        <span class="skill">
+            Google Search Console
+        </span>
+
+        <span class="skill">
+            Google Analytics
+        </span>
+
+        <span class="skill">
+            Bing Webmaster Tools
+        </span>
 
     </div>
 
@@ -1242,7 +1744,10 @@ footer{
 </section>
 
 
-<!-- PROCESS -->
+
+<!-- =========================
+     PROCESS
+========================= -->
 
 <section class="process">
 
@@ -1250,9 +1755,13 @@ footer{
 
     <div class="section-heading">
 
-        <div class="label">My Process</div>
+        <div class="label">
+            My Process
+        </div>
 
-        <h2>Simple, Clear & Focused</h2>
+        <h2>
+            Simple, Clear & Focused
+        </h2>
 
         <p>
             I keep projects organized from the initial idea to the finished
@@ -1264,11 +1773,16 @@ footer{
 
     <div class="process-grid">
 
+
         <div class="process-card">
 
-            <div class="process-number">1</div>
+            <div class="process-number">
+                1
+            </div>
 
-            <h3>Understand</h3>
+            <h3>
+                Understand
+            </h3>
 
             <p>
                 Learn about your business, customers, goals and current
@@ -1280,9 +1794,13 @@ footer{
 
         <div class="process-card">
 
-            <div class="process-number">2</div>
+            <div class="process-number">
+                2
+            </div>
 
-            <h3>Plan</h3>
+            <h3>
+                Plan
+            </h3>
 
             <p>
                 Identify the most important improvements and create a clear
@@ -1294,9 +1812,13 @@ footer{
 
         <div class="process-card">
 
-            <div class="process-number">3</div>
+            <div class="process-number">
+                3
+            </div>
 
-            <h3>Implement</h3>
+            <h3>
+                Implement
+            </h3>
 
             <p>
                 Build, customize or configure the Shopify solution required
@@ -1308,9 +1830,13 @@ footer{
 
         <div class="process-card">
 
-            <div class="process-number">4</div>
+            <div class="process-number">
+                4
+            </div>
 
-            <h3>Optimize</h3>
+            <h3>
+                Optimize
+            </h3>
 
             <p>
                 Review the final result and make sure the store is ready for
@@ -1326,13 +1852,18 @@ footer{
 </section>
 
 
-<!-- CTA -->
+
+<!-- =========================
+     CALL TO ACTION
+========================= -->
 
 <section id="contact" class="cta">
 
 <div class="container">
 
-    <h2>Have a Shopify Project?</h2>
+    <h2>
+        Have a Shopify Project?
+    </h2>
 
     <p>
         Whether you need a Shopify store customized, redesigned, optimized
@@ -1344,7 +1875,9 @@ footer{
         href="https://www.upwork.com/freelancers/~01f0ea6d662f33cc0c"
         target="_blank"
         class="btn btn-primary">
+
         Let's Work Together on Upwork
+
     </a>
 
 </div>
@@ -1352,7 +1885,10 @@ footer{
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
 
@@ -1366,12 +1902,60 @@ footer{
         href="https://www.upwork.com/freelancers/~01f0ea6d662f33cc0c"
         target="_blank"
         class="footer-upwork">
+
         View My Upwork Profile →
+
     </a>
 
 </div>
 
 </footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+function changeImage(mainImageId, thumbnail){
+
+    const mainImage = document.getElementById(mainImageId);
+
+    mainImage.src = thumbnail.src;
+
+    mainImage.alt = thumbnail.alt;
+
+
+    const gallery = thumbnail.closest(".project-gallery");
+
+    const thumbnails = gallery.querySelectorAll(".project-thumbnails img");
+
+    thumbnails.forEach(function(image){
+
+        image.classList.remove("active");
+
+    });
+
+
+    thumbnail.classList.add("active");
+
+}
+
+
+document.querySelectorAll(".project-main-image").forEach(function(image){
+
+    image.addEventListener("click", function(){
+
+        window.open(this.src, "_blank");
+
+    });
+
+});
+
+</script>
+
 
 </body>
 </html>
